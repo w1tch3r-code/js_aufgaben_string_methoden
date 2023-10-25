@@ -183,8 +183,8 @@ btnSubmit.addEventListener("click", (event) => {
 		output6.innerHTML = `${stringInput.slice(0, indexStringInput)}<br>`;
 		output6.innerHTML += stringInput.slice(indexStringInput);
 	} else if (rdBtn[1].checked) {
-		output6.innerHTML = `${stringInput.slice(0, indexStringInput+1)}<br>`;
-		output6.innerHTML += stringInput.slice(indexStringInput+1);
+		output6.innerHTML = `${stringInput.slice(0, indexStringInput + sliceInput.length)}<br>`;
+		output6.innerHTML += stringInput.slice(indexStringInput + sliceInput.length);
 	} else {
 		output6.textContent = 'Bitte "Davor" oder "Danach" auswählen!'
 	}
